@@ -43,5 +43,28 @@ body{
 }
 
 #wrapper input:focus{
-    
+    outline: none;
+    border-color: #e27d3f;
+}
+
+#wrapper button{
+    position: relative;
+    border-radius: 0,5em;
+    font-weight: 500;
+    font-size: 1em;
+    background-color: #e27d3f;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#error{
+    text-align: center;
+    background-color: #fff;
+    color: rgb(124, 215, 124);
+    margin-top: 1.5em;
+    padding: 1em 0;
+    border-radius: 0.8em;
+    display: none;
 }
