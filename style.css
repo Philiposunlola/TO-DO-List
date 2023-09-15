@@ -14,8 +14,8 @@ body{
     width: min(95vw, 31.25em);
     position: absolute;
     margin: auto;
-    left: 0%;
-    right: 0%;
+    left: 0;
+    right: 0;
     top: 1.875em;
 }
 
