@@ -29,6 +29,7 @@ body{
 #wrapper{
     position: relative;
     display: grid;
+    grid-template-columns: 8fr 4fr;
     gap: 1em;
 }
 
