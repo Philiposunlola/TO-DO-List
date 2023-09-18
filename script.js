@@ -22,7 +22,7 @@ const addTalk = () => {
 
     const task = `<div class="task">
         <input type="checkbox" class="task-check">
-        <span class="taskName"${taskName}</span>
+        <span class="taskName">${taskName}</span>
         <button class="edit">
             <i class="fa-solid fa-pen-to-square"></i>
         </button>
