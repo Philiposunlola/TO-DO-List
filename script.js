@@ -12,4 +12,10 @@ const dispalyCount = (taskCount) => {
 
 const addTalk = () => {
     const taskName = newTaskInput.value.trim();
+    error.style.display = "none";
+    if (!taskName) {
+        setTimeout(() => {
+            error.style.display = "block";
+        }, 200);
+    }
 };
