@@ -8,3 +8,8 @@ let taskCount = 0;
 const dispalyCount = (taskCount) => {
     countValue.innerText = taskCount;
 };
+
+
+const addTalk = () => {
+    const taskName = newTaskInput.value.trim();
+};
