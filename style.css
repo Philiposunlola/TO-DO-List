@@ -23,7 +23,7 @@ body{
     padding: 2em 2.5em;
     background-color: antiquewhite;
     box-shadow: 0 1em 2em rgba(0, 0, 0, 0.3);
-    border-radius: 0.8em;
+    border-radius: 1em;
 }
 
 #wrapper{

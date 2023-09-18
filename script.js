@@ -35,4 +35,4 @@ const addTalk = () => {
     
 };
 
-addBtn.addEventListener("click", addtask);
+addBtn.addEventListener("click", addTask);
