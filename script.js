@@ -13,9 +13,20 @@ const dispalyCount = (taskCount) => {
 const addTalk = () => {
     const taskName = newTaskInput.value.trim();
     error.style.display = "none";
-    if (!taskName) {
+    if (!taskname) {
         setTimeout(() => {
             error.style.display = "block";
         }, 200);
+        return;
     }
+
+    const task = `<div class="task">
+        <input type="checkbox" class="task-check">
+        <span class="taskname"${taskName}</span>
+        <button class="edit">
+        
+        </button>
+        <button class="delete">
+        
+        >`
 };
