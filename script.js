@@ -13,7 +13,7 @@ const dispalyCount = (taskCount) => {
 const addTalk = () => {
     const taskName = newTaskInput.value.trim();
     error.style.display = "none";
-    if (!taskname) {
+    if (!taskName) {
         setTimeout(() => {
             error.style.display = "block";
         }, 200);
@@ -24,12 +24,15 @@ const addTalk = () => {
         <input type="checkbox" class="task-check">
         <span class="taskname"${taskName}</span>
         <button class="edit">
-        
+            <i class="fa-solid fa-pen-to-square"></i>
         </button>
         <button class="delete">
-
-
+            <i class="fa-solid fa-trash"></i>
         </button>
     </div>`;
+
+    taskContainer.insertAdjacentHTML("beforeend", task);
     
 };
+
+addBtn.addEventListener("click", addtask);
