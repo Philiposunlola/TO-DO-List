@@ -1,7 +1,7 @@
 const addBtn = document.querySelector("#add-btn");
 const newTaskInput = document.querySelector("#wrapper input");
 const taskContainer = document.querySelector("#tasks");
-const error = document.querySelector("error");
+const error = document.getElementById("error");
 const countValue = document.querySelector(".count-value");
 let taskCount = 0;
 
@@ -22,7 +22,7 @@ const addTalk = () => {
 
     const task = `<div class="task">
         <input type="checkbox" class="task-check">
-        <span class="taskname"${taskName}</span>
+        <span class="taskName"${taskName}</span>
         <button class="edit">
             <i class="fa-solid fa-pen-to-square"></i>
         </button>
