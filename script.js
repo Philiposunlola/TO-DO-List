@@ -27,6 +27,9 @@ const addTalk = () => {
         
         </button>
         <button class="delete">
-        
-        >`
+
+
+        </button>
+    </div>`;
+    
 };
