@@ -22,7 +22,7 @@ const addTalk = () => {
 
     const task = `<div class="task">
         <input type="checkbox" class="task-check">
-        <span class="taskName">${taskName}</span>
+        <span class="taskname">${taskName}</span>
         <button class="edit">
             <i class="fa-solid fa-pen-to-square"></i>
         </button>
@@ -35,4 +35,4 @@ const addTalk = () => {
     
 };
 
-addBtn.addEventListener("click", addTask);
+addBtn.addEventListener("click", addTalk);

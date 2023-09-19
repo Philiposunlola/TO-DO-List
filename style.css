@@ -58,6 +58,7 @@ body{
     outline: none;
     color: #fff;
     cursor: pointer;
+    border-radius: 1em;
 }
 
 #error{
