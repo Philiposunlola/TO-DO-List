@@ -94,6 +94,11 @@ body{
     left: 50%;
 }
 
+.task input[type=":checkbox"]:checked:before {
+    background-color: #61c7f3;
+    border-color: #61c7f3;
+}
+
 .task input[type = checkbox]:checked:before {
     position: absolute;
     content: "\f00c";
