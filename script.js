@@ -37,7 +37,7 @@ const addTalk = () => {
     deleteButtons.forEach((button) => {
         button.onclick = () => {
             button.parentNode.remove();
-            taskCount = -1;
+            taskCount -= 1;
             dispalyCount(taskCount);
         }
     })
@@ -56,7 +56,19 @@ const addTalk = () => {
         };
     });
     const taskCheck = document.querySelectorAll(".task-check");
-    
+    taskCheck.forEach((checkBox) => {
+        checkBox.onchange = () => {
+            checkBox.nextElementSibling.classList.toogle("completed");
+            if (checkBox.checked) {
+                taskCount -= 1;
+            } else {
+                taskCount += 1;
+            };
+        }
+    });
+    taskCount += 1;
+    dispalyCount(taskCount);
+    newTaskInput.value = "";
 };
 
 addBtn.addEventListener("click", addTalk);
