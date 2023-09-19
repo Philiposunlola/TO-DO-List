@@ -6,7 +6,7 @@
 
 body{
     height: 100vh;
-    background: linear-gradient(  #c8bebe 50%,  #6cc9e8 50%);
+    background: linear-gradient(  #979393 50%,  #6cc9e8 50%);
 }
 
 .app{
@@ -39,8 +39,8 @@ body{
     color: black;
     font-size: 0.9em;
     border: none;
-    border-bottom: 2px solid #d1d3d4;
-    padding: 1em 0.5em;
+    border-bottom: 2px solid solid #d1d3d4;
+    padding : 1em 0.5em;
 }
 
 #wrapper input:focus{
@@ -59,6 +59,81 @@ body{
     color: #fff;
     cursor: pointer;
     border-radius: 1em;
+}
+
+#tasks{
+    background-color:#fff;
+    padding: 0.8em 1em;
+    display: grid;
+    grid-template-columns: 1fr 8fr 2fr 2fr;
+    gap: 1em;
+    border-radius: 0,5em;
+    box-shadow: 0 0.5 1em rgba(0, 0, 0, 0.05);
+    align-items: center;
+    cursor: pointer;
+}
+
+.task:not(:first-child) {
+    margin-top: 1rem;
+}
+
+.task input[type="checked"] {
+    position: relative;
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.task input[type="checkedbox"]:before{
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.task input[type = checkbox]:checked:before {
+    position: absolute;
+    content: "\f00c";
+    color: #fff;
+    font-size: 0.8em;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.task span {
+    font: 0.9em;
+    font-weight: 400;
+    word-break: break-all;
+}
+
+.task button {
+    color: #fff;
+    width: 100%;
+    padding: 1em 0;
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.edit {
+    background-color: #6cc9e8 ;
+}
+
+.delete {
+    background-color: #f5154d ;
+}
+
+#pending-task {
+    color: #6cc9e8;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #a0a0a0 ;
 }
 
 #error{

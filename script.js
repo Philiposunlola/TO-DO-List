@@ -72,3 +72,9 @@ const addTalk = () => {
 };
 
 addBtn.addEventListener("click", addTalk);
+
+window.onload = () => {
+    taskCount = 0;
+    dispalyCount(taskCount);
+    newTaskInput.value = "";
+}
