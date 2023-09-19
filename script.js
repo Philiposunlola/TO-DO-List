@@ -32,6 +32,15 @@ const addTalk = () => {
     </div>`;
 
     taskContainer.insertAdjacentHTML("beforeend", task);
+
+    const deleteButtons = document.querySelectorAll(".delete");
+    deleteButtons.forEach((button) => {
+        button.onclick = () => {
+            button.parentNode.remove();
+            taskCount = -1;
+            dispalyCount(taskCount);
+        }
+    })
     
 };
 
