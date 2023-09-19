@@ -41,6 +41,21 @@ const addTalk = () => {
             dispalyCount(taskCount);
         }
     })
+
+    const editButtons = document.querySelectorAll(".edit");
+    editButtons.forEach((editBtn) => {
+        editBtn.onclick = (e) => {
+            let targetElement = e.target;
+            if (!(e.target.className == "edit")) {
+                targetElement = e.target.parentElement;
+            }
+            newTaskInput.value = targetElement.previousElementSibling?.innerText;
+            targetElement.parentNode.remove();
+            taskCount -= 1;
+            dispalyCount(taskCount);
+        };
+    });
+    const taskCheck = document.querySelectorAll(".task-check");
     
 };
 
