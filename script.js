@@ -5,12 +5,11 @@ const error = document.getElementById("error");
 const countValue = document.querySelector(".count-value");
 let taskCount = 0;
 
-const dispalyCount = (taskCount) => {
+const displayCount = (taskCount) => {
     countValue.innerText = taskCount;
 };
 
-
-const addTalk = () => {
+const addTask = () => {
     const taskName = newTaskInput.value.trim();
     error.style.display = "none";
     if (!taskName) {
@@ -38,7 +37,7 @@ const addTalk = () => {
         button.onclick = () => {
             button.parentNode.remove();
             taskCount -= 1;
-            dispalyCount(taskCount);
+            displayCount(taskCount);
         }
     })
 
@@ -52,7 +51,7 @@ const addTalk = () => {
             newTaskInput.value = targetElement.previousElementSibling?.innerText;
             targetElement.parentNode.remove();
             taskCount -= 1;
-            dispalyCount(taskCount);
+            displayCount(taskCount);
         };
     });
     const tasksCheck = document.querySelectorAll(".task-check");
@@ -64,15 +63,15 @@ const addTalk = () => {
             } else {
                 taskCount += 1;
             };
-            dispalyCount(taskCount);
+            displayCount(taskCount);
         };
     });
     taskCount += 1;
-    dispalyCount(taskCount);
+    displayCount(taskCount);
     newTaskInput.value = "";
 };
 
-addBtn.addEventListener("click", addTalk);
+addBtn.addEventListener("click", addTask);
 
 window.onload = () => {
     taskCount = 0;
