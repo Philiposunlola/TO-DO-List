@@ -39,11 +39,11 @@ body{
     color: black;
     font-size: 0.9em;
     border: none;
-    border-bottom: 2px solid solid #d1d3d4;
+    border-bottom: 2px solid solid #95c0d5;
     padding : 1em 0.5em;
 }
 
-#wrapper input:focus{
+#wrapper input:focus {
     outline: none;
     border-color: #61c7f3;
 }
