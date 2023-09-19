@@ -1,6 +1,6 @@
 const addBtn = document.querySelector("#add-btn");
 const newTaskInput = document.querySelector("#wrapper input");
-const taskContainer = document.querySelector("#tasks");
+const tasksContainer = document.querySelector("#tasks");
 const error = document.getElementById("error");
 const countValue = document.querySelector(".count-value");
 let taskCount = 0;
@@ -31,7 +31,7 @@ const addTalk = () => {
         </button>
     </div>`;
 
-    taskContainer.insertAdjacentHTML("beforeend", task);
+    tasksContainer.insertAdjacentHTML("beforeend", task);
 
     const deleteButtons = document.querySelectorAll(".delete");
     deleteButtons.forEach((button) => {
@@ -55,8 +55,8 @@ const addTalk = () => {
             dispalyCount(taskCount);
         };
     });
-    const taskCheck = document.querySelectorAll(".task-check");
-    taskCheck.forEach((checkBox) => {
+    const tasksCheck = document.querySelectorAll(".task-check");
+    tasksCheck.forEach((checkBox) => {
         checkBox.onchange = () => {
             checkBox.nextElementSibling.classList.toogle("completed");
             if (checkBox.checked) {
@@ -64,7 +64,8 @@ const addTalk = () => {
             } else {
                 taskCount += 1;
             };
-        }
+            dispalyCount(taskCount);
+        };
     });
     taskCount += 1;
     dispalyCount(taskCount);
