@@ -6,7 +6,7 @@
 
 body{
     height: 100vh;
-    background: linear-gradient(  #979393 50%,  #6cc9e8 50%);
+    background: linear-gradient(  #afe998ec 50%,  #6cc9e8 50%);
 }
 
 .app{
@@ -61,7 +61,15 @@ body{
     border-radius: 1em;
 }
 
-#tasks{
+#tasks {
+    margin-top: 1em;
+    border-radius: 0.5em;
+    width: 100%;
+    position: relative;
+    padding: 1em 0.5em;
+}
+
+.task{
     background-color:#fff;
     padding: 0.8em 1em;
     display: grid;
@@ -72,6 +80,7 @@ body{
     align-items: center;
     cursor: pointer;
 }
+
 
 .task:not(:first-child) {
     margin-top: 1rem;
@@ -86,7 +95,7 @@ body{
     border: 2px solid #fff;
 }
 
-.task input[type="checkedbox"]:before{
+.task input[type="checkedbox"]:before {
     content: "";
     position: absolute;
     transform: translate(-50%, -50%);
