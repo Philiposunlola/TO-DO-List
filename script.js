@@ -75,6 +75,6 @@ addBtn.addEventListener("click", addTask);
 
 window.onload = () => {
     taskCount = 0;
-    dispalyCount(taskCount);
+    displayCount(taskCount);
     newTaskInput.value = "";
 }
