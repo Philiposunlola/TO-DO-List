@@ -8,7 +8,7 @@ let taskCount = 0;
 const displayCount = (taskCount) => {
     countValue.innerText = taskCount;
 };
-hjhh
+
 const addTask = () => {
     const taskName = newTaskInput.value.trim();
     error.style.display = "none";
