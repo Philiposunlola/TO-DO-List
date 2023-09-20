@@ -153,8 +153,32 @@ body{
     text-align: center;
     background-color: #fff;
     color: rgb(233, 61, 9);
-    margin-top: 1.5em;
+    margin-top: 1v.5em;
     padding: 1em 0;
     border-radius: 0.8em;
     display: none;
 }
+
+/* Media query for smaller devices */
+@media only screen and (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+    
+    input[type="text"] {
+      font-size: 14px;
+    }
+    
+    button {
+      font-size: 14px;
+    }
+    
+    #tasks {
+      margin-top: 10px;
+    }
+    
+    #error {
+      display: block;
+      font-size: 14px;
+    }
+  }
