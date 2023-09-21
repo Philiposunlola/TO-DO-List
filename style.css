@@ -158,14 +158,21 @@ body {
     display: none;
 }
 
-/* Media query for smaller devices */
+/* Media query for smaller devices (up to 600px) */
 @media only screen and (max-width: 600px) {
+    .app {
+        width: 100%; /* Full width on mobile */
+        left: auto; /* Remove left and right positioning */
+        right: auto;
+        top: 0; /* Adjust top position as needed */
+    }
+
     .container {
-        padding: 10px;
+        padding: 10px; /* Increase padding for better spacing */
     }
 
     #wrapper {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Single column layout on mobile */
     }
 
     #wrapper input[type="text"] {
@@ -184,4 +191,14 @@ body {
         display: block;
         font-size: 14px;
     }
+}
+
+/* Media query for small devices (up to 768px) */
+@media only screen and (max-width: 768px) {
+    /* Add your styles for small devices here */
+}
+
+/* Media query for medium devices (up to 992px) */
+@media only screen and (max-width: 992px) {
+    /* Add your styles for medium devices here */
 }
